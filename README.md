@@ -1,12 +1,5 @@
-This repository contains a README file sample for Daytona Samples and the MIT License.
-
-It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
-
-Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
-
-# Sample <LANGUAGE/FRAMEWORK>
-
-Sample description
+# Sample NextJS with Gemini Chat
+This repository contains a simple nextjs app with a button to start chatting with Gemini
 
 ---
 
@@ -17,18 +10,24 @@ Sample description
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
 2. **Create the Workspace**:  
    ```bash  
-   daytona create <SAMPLE_REPO_URL> 
+   daytona create https://github.com/daytonaio/sample-nextjs-gemini-chat
    ```  
+3. **Create a .env file in root directory with your Gemini API key value**
+   ```
+   GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+   ```
 
-... MORE STEPS IF NEEDED ...
-
-4. **Start the Application**:  
+4. **Start the Application**:
+   
+   Install the required dependencies first.
    ```bash  
-   command to start the app
+   npm install
    ```  
-
+   Then run your local dev server.
+   ```bash
+   npm run dev
+   ```
 ---
 
 ## ✨ Features  
-
-List of sample features (e.g. realtime chat app, standardized development environment with devcontainers)
+- A simple chat ui with Gemini
